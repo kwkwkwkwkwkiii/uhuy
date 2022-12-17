@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Modal popup animation with GSAP &amp; Tailwindcss</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="w-full h-screen bg-gradient-to-tr from-pink-400 to-pink-700">
+
+    <div id="authOverlay" class="fixed z-10 left-0 top-0 h-full w-full flex items-center justify-center py-3 px-2 overflow-y-auto bg-white/80 backdrop-blur-sm scale-y-0 -translate-x-full opacity-0 origin-center">
+        <div id="fourth" class="bg-white/0 max-w-sm m-auto mb-0 sm:mb-auto p-3 border border-white/0 rounded-2xl shadow-sm">
+            <div id="second" class="bg-white p-4 sm:p-8 w-full rounded-xl shadow-sm scale-y-0 opacity-0">
+
+                
+                <div id="third" class="relative scale-y-0 opacity-0">
+
+                    <h1 class="text-red-400 text-3xl font-bold mb-4 text-center">
+                        Hai Nahdiyyah! 👻
+                    </h1>
+
+                    <p class="text-center text-neutral-500/80 mb-4">Selamat pagi, semoga harimu menyenangkan :)
+                    <div class="text-center">
+                        <button onclick="closeAuthModal()" class="bg-neutral-100 text-neutral-400 font-semibold text-xl rounded-md border-b-[3px] px-3 py-1">Close</button>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button onclick="openAuthModal()" class="bg-white text-red-400 font-semibold text-2xl rounded-md border-b-[3px] px-6 py-3 mt-16">Open</button>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://cdn.tailwindcss.com'></script><script  src="./script.js"></script>
+
+</body>
+</html>
